@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.numericNoEmpleado = new System.Windows.Forms.NumericUpDown();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.maskedTextBoxSueldo = new System.Windows.Forms.MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericNoEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonAsistencia
@@ -87,19 +87,19 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Sueldo x Hora";
             // 
-            // textBox2
+            // textBoxNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 116);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 20);
-            this.textBox2.TabIndex = 6;
+            this.textBoxNombre.Location = new System.Drawing.Point(171, 116);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(276, 20);
+            this.textBoxNombre.TabIndex = 6;
             // 
-            // numericUpDown1
+            // numericNoEmpleado
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(171, 52);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 8;
+            this.numericNoEmpleado.Location = new System.Drawing.Point(171, 52);
+            this.numericNoEmpleado.Name = "numericNoEmpleado";
+            this.numericNoEmpleado.Size = new System.Drawing.Size(120, 20);
+            this.numericNoEmpleado.TabIndex = 8;
             // 
             // buttonGuardar
             // 
@@ -109,6 +109,7 @@
             this.buttonGuardar.TabIndex = 9;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // maskedTextBoxSueldo
             // 
@@ -125,8 +126,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.maskedTextBoxSueldo);
             this.Controls.Add(this.buttonGuardar);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.numericNoEmpleado);
+            this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -134,7 +135,7 @@
             this.Controls.Add(this.buttonAsistencia);
             this.Name = "FormEmpleado";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericNoEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,8 +148,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.NumericUpDown numericNoEmpleado;
         private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxSueldo;
     }

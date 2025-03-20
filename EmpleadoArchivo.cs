@@ -7,13 +7,13 @@ namespace LaboratorioRepaso1
     internal class EmpleadoArchivo
     {
 
-        public void Guardar (string archivo, List<Empleado> empleados)
+        public void Guardar(string archivo, List<Empleado> empleados)
         {
             string json = JsonConvert.SerializeObject(empleados);                        
             System.IO.File.WriteAllText(archivo, json);
         }
 
-        public List<Empleado> Leer (string archivo)
+        public List<Empleado> Leer(string archivo)
         {           
             List<Empleado> lista = new List<Empleado>();                        
             StreamReader jsonStream = File.OpenText(archivo);

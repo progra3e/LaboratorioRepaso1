@@ -38,6 +38,10 @@ namespace LaboratorioRepaso1
 
         private void MostrarEmpleados()
         {
+            //Como el empleado tiene varios datos, hay que indicarle al 
+            //combobox que dato de esos va a mostrar y que dato de esos
+            //va a seleccionar al dar clic 
+            //En este caso va a mostrar el nombre, y va a seleccionar el número de empleado
             comboBoxEmpleado.ValueMember = "NoEmpleado";
             comboBoxEmpleado.DisplayMember = "Nombre";
             comboBoxEmpleado.DataSource = empleados;
@@ -47,7 +51,6 @@ namespace LaboratorioRepaso1
         {
             CargarEmpleados();
             MostrarEmpleados ();
-
         }
     }
 }

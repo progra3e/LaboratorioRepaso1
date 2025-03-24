@@ -1,12 +1,1 @@
-[
-    {
-        "NoEmpleado": 1,
-        "Nombre": "Empleado 1",
-        "SueldoHora": 11.11
-    },
-    {
-        "NoEmpleado": 2,
-        "Nombre": "Empleado 2",
-        "SueldoHora": 50.20
-    }
-]
+[{"NoEmpleado":1,"Nombre":"Empleado 1","SueldoHora":11.11},{"NoEmpleado":2,"Nombre":"Empleado 2","SueldoHora":50.20},{"NoEmpleado":3,"Nombre":"Abcd","SueldoHora":89.90}]

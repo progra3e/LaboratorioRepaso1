@@ -19,6 +19,16 @@ namespace LaboratorioRepaso1
             InitializeComponent();
         }
 
+        private void Mostrar()
+        {
+            EmpleadoArchivo empleadoArchivo = new EmpleadoArchivo();
+            empleados = empleadoArchivo.Leer("../../Empleados.json");
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = empleados;
+            dataGridView1.Refresh();
+        }
+
         private void buttonAsistencia_Click(object sender, EventArgs e)
         {
             FormAsistencia formAsistencia = new FormAsistencia();
@@ -46,6 +56,13 @@ namespace LaboratorioRepaso1
             EmpleadoArchivo empleadoArchivo = new EmpleadoArchivo();
             //6) LLamar a el método grabar
             empleadoArchivo.Guardar("../../Empleados.json", empleados);
+
+            Mostrar();
+        }
+
+        private void FormEmpleado_Load(object sender, EventArgs e)
+        {
+            Mostrar();  
         }
     }
 }

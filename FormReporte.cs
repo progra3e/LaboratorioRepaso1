@@ -63,6 +63,9 @@ namespace LaboratorioRepaso1
                     }                    
                 }
             }
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = reporteSueldos;
+            dataGridView1.Refresh();
         }
     }
 }

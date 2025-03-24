@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonCerrar = new System.Windows.Forms.Button();
+            this.comboBoxEmpleado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonCerrar
@@ -41,14 +42,24 @@
             this.buttonCerrar.UseVisualStyleBackColor = true;
             this.buttonCerrar.Click += new System.EventHandler(this.buttonCerrar_Click);
             // 
+            // comboBoxEmpleado
+            // 
+            this.comboBoxEmpleado.FormattingEnabled = true;
+            this.comboBoxEmpleado.Location = new System.Drawing.Point(29, 49);
+            this.comboBoxEmpleado.Name = "comboBoxEmpleado";
+            this.comboBoxEmpleado.Size = new System.Drawing.Size(376, 21);
+            this.comboBoxEmpleado.TabIndex = 1;
+            // 
             // FormAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxEmpleado);
             this.Controls.Add(this.buttonCerrar);
             this.Name = "FormAsistencia";
             this.Text = "FormAsistencia";
+            this.Load += new System.EventHandler(this.FormAsistencia_Load);
             this.ResumeLayout(false);
 
         }
@@ -56,5 +67,6 @@
         #endregion
 
         private System.Windows.Forms.Button buttonCerrar;
+        private System.Windows.Forms.ComboBox comboBoxEmpleado;
     }
 }

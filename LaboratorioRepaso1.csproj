@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Asistencia.cs" />
+    <Compile Include="AsistenciaArchivo.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="EmpleadoArchivo.cs" />
     <Compile Include="FormEmpleado.cs">

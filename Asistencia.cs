@@ -9,7 +9,7 @@ namespace LaboratorioRepaso1
     internal class Asistencia
     {
         public int NoEmpleado {  get; set; }
-        public int horasMes {  get; set; }
-        public int mes {  get; set; }
+        public int HorasMes {  get; set; }
+        public int Mes {  get; set; }
     }
 }

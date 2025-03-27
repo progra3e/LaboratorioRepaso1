@@ -64,5 +64,11 @@ namespace LaboratorioRepaso1
         {
             Mostrar();  
         }
+
+        private void buttonReporte_Click(object sender, EventArgs e)
+        {
+            FormReporte formReporte = new FormReporte();
+            formReporte.Show();
+        }
     }
 }

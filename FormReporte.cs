@@ -14,7 +14,7 @@ namespace LaboratorioRepaso1
     {
         List<Empleado> empleados = new List<Empleado>();    
         List<Asistencia> asistencias = new List<Asistencia>();  
-        List<ReporteSueldo> reporteSueldos = new List<ReporteSueldo>();
+        
 
         public FormReporte()
         {
@@ -29,16 +29,20 @@ namespace LaboratorioRepaso1
         }
         private void CargarAsistencia()
         {
-            //Leer las asistencias
+           AsistenciaArchivo asistenciaArchivo = new AsistenciaArchivo();
+           asistencias = asistenciaArchivo.Leer("../../Asitencias.json");
         }
 
         private void FormReporte_Load(object sender, EventArgs e)
         {
+            CargarEmpleados();
+            CargarAsistencia();
 
         }
 
         private void buttonMostrar_Click(object sender, EventArgs e)
         {
+            List<ReporteSueldo> reporteSueldos = new List<ReporteSueldo>();
             //Recorrer cada empleado
             foreach (var empleado in empleados)
             {
@@ -47,8 +51,9 @@ namespace LaboratorioRepaso1
                 {
                     //Si el No de empleado del Empleado es el mismo de la Asistencia
                     //generar un reporte.
+                    
                     if (empleado.NoEmpleado == asistencia.NoEmpleado)
-                    { 
+                    {
                         //Crear un reporte nuevo
                         ReporteSueldo reporteSueldo = new ReporteSueldo();
                         //El nombre para el reporte lo obtenemos del Empleado

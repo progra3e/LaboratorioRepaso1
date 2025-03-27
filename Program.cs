@@ -16,7 +16,7 @@ namespace LaboratorioRepaso1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAsistencia());
+            Application.Run(new FormEmpleado());
         }
     }
 }

@@ -1,0 +1,17 @@
+[
+    {
+        "NoEmpleado": 2,
+        "HorasMes": 2,
+        "Mes": 2
+    },
+    {
+        "NoEmpleado": 3,
+        "HorasMes": 1,
+        "Mes": 4
+    },
+    {
+        "NoEmpleado": 2,
+        "HorasMes": 4,
+        "Mes": 2
+    }
+]

@@ -38,15 +38,16 @@
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.maskedTextBoxSueldo = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericNoEmpleado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonAsistencia
             // 
-            this.buttonAsistencia.Location = new System.Drawing.Point(716, 498);
+            this.buttonAsistencia.Location = new System.Drawing.Point(605, 504);
             this.buttonAsistencia.Name = "buttonAsistencia";
-            this.buttonAsistencia.Size = new System.Drawing.Size(172, 55);
+            this.buttonAsistencia.Size = new System.Drawing.Size(125, 55);
             this.buttonAsistencia.TabIndex = 0;
             this.buttonAsistencia.Text = "Ir Asistencia";
             this.buttonAsistencia.UseVisualStyleBackColor = true;
@@ -129,11 +130,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(495, 266);
             this.dataGridView1.TabIndex = 11;
             // 
+            // buttonReporte
+            // 
+            this.buttonReporte.Location = new System.Drawing.Point(752, 504);
+            this.buttonReporte.Name = "buttonReporte";
+            this.buttonReporte.Size = new System.Drawing.Size(140, 55);
+            this.buttonReporte.TabIndex = 12;
+            this.buttonReporte.Text = "Ir a Reporte";
+            this.buttonReporte.UseVisualStyleBackColor = true;
+            this.buttonReporte.Click += new System.EventHandler(this.buttonReporte_Click);
+            // 
             // FormEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 591);
+            this.Controls.Add(this.buttonReporte);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.maskedTextBoxSueldo);
             this.Controls.Add(this.buttonGuardar);
@@ -166,6 +178,7 @@
         private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxSueldo;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonReporte;
     }
 }
 

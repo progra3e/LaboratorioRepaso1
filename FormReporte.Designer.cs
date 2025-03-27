@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonMostrar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 39);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(503, 222);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // buttonMostrar
             // 
-            this.buttonMostrar.Location = new System.Drawing.Point(218, 296);
+            this.buttonMostrar.Location = new System.Drawing.Point(284, 301);
             this.buttonMostrar.Name = "buttonMostrar";
             this.buttonMostrar.Size = new System.Drawing.Size(148, 60);
             this.buttonMostrar.TabIndex = 1;
@@ -51,13 +43,21 @@
             this.buttonMostrar.UseVisualStyleBackColor = true;
             this.buttonMostrar.Click += new System.EventHandler(this.buttonMostrar_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(94, 45);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(509, 221);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // FormReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(656, 450);
-            this.Controls.Add(this.buttonMostrar);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.buttonMostrar);
             this.Name = "FormReporte";
             this.Text = "FormReporte";
             this.Load += new System.EventHandler(this.FormReporte_Load);
@@ -67,8 +67,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonMostrar;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
